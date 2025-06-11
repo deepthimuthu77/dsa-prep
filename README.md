@@ -4,30 +4,30 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ## 📊 Progress Overview
 
-| Week | Topics | Problems Target | Status | Completion |
+| Week | Topics | Status | Completion |
 |------|--------|----------------|--------|------------|
-| **Week 1** | Basics, Arrays, Recursion, Strings | 120 | 🔄 | 0/120 |
-| **Week 2** | Linked Lists, Stacks, Queues, Trees | 120 | ⏳ | 0/120 |
-| **Week 3** | Trees, Graphs, Heaps, Binary Search | 120 | ⏳ | 0/120 |
-| **Week 4** | DP, Greedy, Advanced Topics | 90 | ⏳ | 0/90 |
+| **Week 1** | Basics, Arrays, Recursion, Strings  | 🔄 | 5 |
+| **Week 2** | Linked Lists, Stacks, Queues, Trees | ⏳ | 0 |
+| **Week 3** | Trees, Graphs, Heaps, Binary Search | ⏳ | 0 |
+| **Week 4** | DP, Greedy, Advanced Topics | ⏳ | 0 |
 
-**Total Progress: 0/450 Problems Solved** 🎯
+**Total Progress: 4 Problems Solved** 🎯
 
 ---
 
 ## 📅 30-Day Study Plan
 
-### 🔥 Week 1: Basics and Core Concepts (120 Problems)
+### 🔥 Week 1: Basics and Core Concepts (~120 Problems)
 
 #### **Day 1-2: Basics & Arrays** 
 *Target: ~20 problems*
-- [ ] Input/Output fundamentals
-- [ ] Loops and basic operations
+- [x] Input/Output fundamentals
+- [x] Loops and basic operations
 - [ ] Sorting algorithms
 - [ ] Searching techniques
 - [ ] Array manipulation problems
 
-**Problems Solved:** 0/20 ✅
+**Problems Solved:** 5/20 ✅
 
 #### **Day 3-4: Recursion & Backtracking**
 *Target: ~20 problems*
@@ -49,7 +49,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ---
 
-### 🔗 Week 2: Linked Lists, Stacks, Queues, Trees (120 Problems)
+### 🔗 Week 2: Linked Lists, Stacks, Queues, Trees (~120 Problems)
 
 #### **Day 8-10: Linked Lists**
 *Target: ~30 problems*
@@ -79,7 +79,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ---
 
-### 🌳 Week 3: Trees, Graphs, Heaps, Binary Search (120 Problems)
+### 🌳 Week 3: Trees, Graphs, Heaps, Binary Search (~120 Problems)
 
 #### **Day 15-16: Binary Trees (Advanced)**
 *Target: ~20 problems*
@@ -119,7 +119,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ---
 
-### 💎 Week 4: DP, Greedy, Advanced Topics (90 Problems)
+### 💎 Week 4: DP, Greedy, Advanced Topics (~90 Problems)
 
 #### **Day 22-24: Dynamic Programming**
 *Target: ~40 problems*
@@ -251,9 +251,9 @@ DSA-Preparation/
 
 **Last Updated:** [11-06-2025]
 
-**Challenge Started:** [11-06-2025]
+**Challenge Started:** [12-06-2025]
 
-**Expected Completion:** [11-07-2025]
+**Expected Completion:** [12-07-2025]
 
 ---
 
