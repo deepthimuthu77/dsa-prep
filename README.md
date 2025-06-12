@@ -6,7 +6,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 | Week | Topics | Status | Completion |
 |------|--------|----------------|--------|------------|
-| **Week 1** | Basics, Arrays, Recursion, Strings  | 🔄 | 5 |
+| **Week 1** | Basics, Arrays, Recursion, Strings  | 🔄 | 13 |
 | **Week 2** | Linked Lists, Stacks, Queues, Trees | ⏳ | 0 |
 | **Week 3** | Trees, Graphs, Heaps, Binary Search | ⏳ | 0 |
 | **Week 4** | DP, Greedy, Advanced Topics | ⏳ | 0 |
@@ -27,7 +27,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [ ] Searching techniques
 - [ ] Array manipulation problems
 
-**Problems Solved:** 5/20 ✅
+**Problems Solved:** 13/20 ✅
 
 #### **Day 3-4: Recursion & Backtracking**
 *Target: ~20 problems*
