@@ -249,7 +249,7 @@ DSA-Preparation/
 
 ---
 
-**Last Updated:** [12-06-2025]
+**Last Updated:** [1-06-2025]
 
 **Challenge Started:** [12-06-2025]
 
