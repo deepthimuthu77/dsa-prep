@@ -2,16 +2,7 @@
 
 Welcome to my Data Structures and Algorithms preparation journey! This repository tracks my progress through Striver's comprehensive A2Z DSA Sheet over 30 days.
 
-## 📊 Progress Overview
-
-| Week | Topics | Status | Completion |
-|------|--------|----------------|--------|------------|
-| **Week 1** | Basics, Arrays, Recursion, Strings  | 🔄 | 13 |
-| **Week 2** | Linked Lists, Stacks, Queues, Trees | ⏳ | 0 |
-| **Week 3** | Trees, Graphs, Heaps, Binary Search | ⏳ | 0 |
-| **Week 4** | DP, Greedy, Advanced Topics | ⏳ | 0 |
-
-**Total Progress: 4 Problems Solved** 🎯
+**Total Progress: 13 Problems Solved** 🎯
 
 ---
 
