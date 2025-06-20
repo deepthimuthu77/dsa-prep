@@ -182,22 +182,292 @@ void explainPriorityQueue() {
     cout << minHeap.top(); // returns top element (0)
 }
 
+void explainSet() {
+    set<int> s; // set is a collection of unique elements, sorted in ascending order by default
+
+    s.insert(1); // {1}
+    s.emplace(2); // {1, 2}
+    s.insert(3); // {1, 2, 3}
+    s.insert(2); // {1, 2, 3} (duplicate element is not added)
+
+    // functionality of insert in vector is similar to set, but in set, elements are unique and sorted
+
+    // begin(), end(), rbegin(), rend(),
+    // size(), swap(), empty(), clear() same as vector
+
+    auto it = s.find(2); // finds the element 2 in the set, returns an iterator to it
+
+    auto it2 = s.find(4); // finds the element 4 in the set, returns an iterator to end() if not found
+
+    if (it2 != s.end()) {
+        cout << *it2; // prints 4 if found
+    } else {
+        cout << "Element not found";
+    }
+
+    auto it3 = s.find(5); // finds the element 5 in the set, returns an iterator to it
+
+    s.erase(2); // removes element 2, now set is {1, 3} (takes O(log n) time)
+
+    s.erase(it2, it3); // erases elements in the range [it2, it3) (start inclusive, end exclusive)
+
+    int cnt = s.count(3); // returns 1 if 3 is present, else 0 (takes O(log n) time)
+
+    s.lower_bound(2); // returns an iterator to the first element that is not less than 2
+
+    s.upper_bound(2); // returns an iterator to the first element that is greater than 2
+
+    // lower_bound and upper_bound are used to find the range of elements in the set
+
+    // lower_bound => returns an iterator to the first element that is greater than or equal to the given value
+    // upper_bound => returns an iterator to the first element that is strictly greater than the given value
+
+    // uses in dsa => to find the range of elements in the set
+    // lower_bound can be used to find the starting point of a range
+    // upper_bound can be used to find the ending point of a range
+
+    // set does not support indexing, so we cannot access elements by index
+}
+
+void explainMultiSet(){
+    //everything is same as set, but it allows duplicate elements
+
+    multiset<int> ms;
+    ms.insert(1); // {1}
+    ms.emplace(2); // {1, 2}
+    ms.insert(2); // {1, 2, 2}
+
+    ms.erase(2); // removes all occurrence of 2, now multiset is {1}
+
+    ms.insert(2); // {1, 2}
+    ms.insert(2); // {1, 2, 2}
+
+    ms.erase(ms.find(2)); // removes only one occurrence of 2, now multiset is {1, 2} (since it points the the iterator of the first occurrence of 2)
+
+    ms.insert(2); // {1, 2, 2}
+
+    // ms.erase(ms.find(2), ms.find(2)+2); // removes all occurrences of 2 in the range [it2, it3) (start inclusive, end exclusive)
+
+    // ms.erase(ms.lower_bound(2), ms.upper_bound(2)); // removes all occurrences of 2 in the range [it2, it3) (start inclusive, end exclusive)
+
+    // the rest of the functions are same as set
+}
+
+void explainUSet(){
+    // unordered_set is a collection of unique elements, not sorted, uses hash table for storage
+
+    unordered_set<int> us;
+
+    us.insert(1); // {1}
+    us.emplace(2); // {1, 2}
+    us.insert(3); // {1, 2, 3}
+    us.insert(2); // {1, 2, 3} (duplicate element is not added)
+
+    // rest of the functions are same as set
+    // but the order of elements is not guaranteed to be sorted
+    // lower_bound and upper_bound are not available in unordered_set
+
+    // it has a better average time complexity for insert, erase and find operations compared to set (O(1) on average)
+    // but it can take O(n) time in the worst case due to collisions in the hash table
+}
+
+void explainMap() {
+    // map is a collection of key-value pairs, sorted by keys by default
+
+    map<int, int> mpp; // {key: value}
+
+    map<int, pair<int, int>> mpp2; // {key: (value1, value2)}
+
+    map<pair<int, int>, int> mpp3; // { (key1, key2): value }
+
+    mpp[1] = 2; // {1: 2}
+    mpp.emplace(2, 3); // {1: 2, 2: 3}
+    mpp.insert({3, 4}); // {1: 2, 2: 3, 3: 4}
+    mpp3[{4, 5}] = 6; // {1: 2, 2: 3, 3: 4, (4, 5): 6}
+
+    for(auto it : mpp) {
+        cout << it.first << " " << it.second << endl; // prints key and value pairs
+    }
+
+    cout << mpp[1] << " " << mpp.at(5); // returns value for key 1 and 5
+
+    auto it = mpp.find(2); // finds the key 2 in the map, returns an iterator to it
+    cout << (it)->first << " " << (it)->second; // prints key and value for key 2
+
+    auto it2 = mpp.find(5); // finds the key 5 in the map, returns an iterator to end() if not found
+
+    if (it2 != mpp.end()) {
+        cout << (it2)->first << " " << (it2)->second; // prints key and value for key 5 if found
+    } else {
+        cout << "Key not found";
+    }
+
+    // syntax for lower_bound and upper_bound in map
+    auto it3 = mpp.lower_bound(2); // returns an iterator to the first
+    // element that is not less than 2 (i.e., key >= 2)
+
+    auto it4 = mpp.upper_bound(2); // returns an iterator to the first
+    // element that is greater than 2 (i.e., key > 2)
+
+    // erase, size, swap, clear, empty same as set
+}
+
+void explainMultiMap() {
+    // everything is same as map, but it allows duplicate keys in sorted order of keys
+
+    multimap<int, int> mmp; // {key: value}
+
+    mmp.insert({1, 2}); // {1: 2}
+    mmp.emplace(2, 3); // {1: 2, 2: 3}
+    mmp.insert({2, 4}); // {1: 2, 2: 3, 2: 4}
+
+    // only mmp[key] = value; is not allowed, as it will overwrite the value for the key
+    // we can use mmp.insert({key, value}) or mmp.emplace(key, value) to insert a new key-value pair
+
+     // rest of the functions are same as map
+}
+
+void explainUMap() {
+    // unordered_map is a collection of key-value pairs, not sorted, uses hash table for storage
+
+    unordered_map<int, int> ump; // {key: value}
+
+    ump[1] = 2; // {1: 2}
+    ump.emplace(2, 3); // {1: 2, 2: 3}
+    ump.insert({3, 4}); // {1: 2, 2: 3, 3: 4}
+
+    for(auto it : ump) {
+        cout << it.first << " " << it.second << endl; // prints key and value pairs
+    }
+
+    // rest of the functions are same as map
+    // but the order of elements is not guaranteed to be sorted
+    // lower_bound and upper_bound are not available in unordered_map
+}
+
+bool comp(pair<int, int> p1, pair<int, int> p2) {
+    if (p1.second < p2.second) {
+        return true; // sorted by second element in ascending order
+
+    } 
+    else if(p1.second > p2.second) {
+        return false; // not sorted by second element in ascending order
+    }
+
+    // the second elements are same, we sort by first element in descending order
+
+    else if (p1.first < p2.first) {
+        return false; // sorted by first element in descending order
+    }
+    else if (p1.first > p2.first) {
+        return true; // not sorted by first element in descending order
+    }
+
+    return false; // if both elements are same, return false
+}
+
+void explainExtra() {
+
+    vector<int> v = {5, 2, 3, 1, 4};
+    int a[] = {5, 2, 3, 1, 4};
+    int n = sizeof(a) / sizeof(a[0]); // calculates the size of the array
+
+    sort(a, a + n); // sorts the array in ascending order
+    sort(v.begin(), v.end()); // sorts the vector in ascending order
+    sort(v.begin(), v.end(), greater<int>()); // sorts the vector in descending order
+    
+    sort(a+2, a+4); // sorts the array from index 2 to index 3 (exclusive) in ascending order
+
+    pair<int, int> a[] = {{1, 2}, {2, 5}, {5, 1}};
+
+    //sort it according to second element in the pair, 
+    // if second element is same, then sort
+    // if according to first element, sort in descending
+
+    sort(a, a+n, comp);
+
+    int num = 3;
+    int cnt = __builtin_popcount(num); // counts the number of set bits in num (significant bits)
+
+    long long int num2 = 3;
+    int cnt2 = __builtin_popcountll(num2); // counts the number of set bits in num2 (significant bits)
+
+    string s = "123";
 
 
-/*
-    time complexity of operations:
-        => vector: push_back O(1), pop_back O(1), insert O(n), erase O(n), access O(1)
-        => list: push_back O(1), pop_back O(1), insert O(1), erase O(1), access O(n)
-        => deque: push_back O(1), pop_back O(1), push_front O(1), pop_front O(1), insert O(n), erase O(n), access O(1)
-        => stack: push O(1), pop O(1), top O(1), empty O(1), size O(1)
-        => queue: push O(1), pop O(1), front O(1), back O(1), empty O(1), size O(1)
-        => priority_queue: push O(log n), pop O(log n), top O(1), empty O(1), size O(1)
-*/
+    // prints all permutations of the string s
+    do{
+        cout << s << endl; 
+    } while(next_permutation(s.begin(), s.end()));
+
+    int maxi = *max_element(v.begin(), v.end()); // returns the maximum element in the vector v
+
+    int mini = *min_element(v.begin(), v.end()); // returns the minimum element in
+
+}
+
+class timeComplexity {
+    /*
+        time complexity of operations:
+            => vector: 
+                        push_back O(1),
+                        pop_back O(1), 
+                        insert O(n), 
+                        erase O(n), 
+                        access O(1)
+            => pair: 
+                        access O(1)
+            => list: 
+                        push_back O(1), 
+                        pop_back O(1), 
+                        insert O(1), 
+                        erase O(1), 
+                        access O(n)
+            => deque: 
+                        push_back O(1), 
+                        pop_back O(1), 
+                        push_front O(1), 
+                        pop_front O(1), 
+                        insert O(n), 
+                        erase O(n), 
+                        access O(1)
+            => stack: 
+                        push O(1), 
+                        pop O(1), 
+                        top O(1), 
+                        empty O(1), 
+                        size O(1)
+            => queue: 
+                        push O(1), 
+                        pop O(1), 
+                        front O(1), 
+                        back O(1), 
+                        empty O(1), 
+                        size O(1)
+            => priority_queue: 
+                        push O(log n), 
+                        pop O(log n), 
+                        top O(1), 
+                        empty O(1), 
+                        size O(1)
+
+    */
+};
 
 int main(){
     explainPair();
     explainVector();
     explainList();
     explainDeque();
+    explainStack();
+    explainQueue();
+    explainPriorityQueue();
+    explainSet();
+    explainMultiSet();
+    explainUSet();
+    explainMap();
+    explainMultiMap();
+    explainUMap();
+    explainExtra();
     return 0;
 }
