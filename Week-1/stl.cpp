@@ -400,7 +400,7 @@ void explainExtra() {
         cout << s << endl; 
     } while(next_permutation(s.begin(), s.end()));
 
-    int maxi = *max_element(v.begin(), v.end()); // returns the maximum element in the vector v
+    int     maxi = *max_element(v.begin(), v.end()); // returns the maximum element in the vector v
 
     int mini = *min_element(v.begin(), v.end()); // returns the minimum element in
 
