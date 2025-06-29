@@ -13,7 +13,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [x] Loops and basic operations
 - [x] C++ STL
 - [x] Basic Math
-- [ ] Basic recursion patterns  **<===**
+- [x] Basic recursion patterns  **<===**
 - [ ] Recursive problem-solving
 - [ ] Basic Hashing
 - [ ] Sorting algorithms
@@ -144,7 +144,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 **Challenge Started:** [12-06-2025]
 
-**Expected Completion:** [12-08-2025]
+**Expected Completion:** [12-09-2025]
 
 ---
 
