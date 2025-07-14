@@ -14,7 +14,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [x] C++ STL
 - [x] Basic Math
 - [x] Basic recursion patterns  **<===**
-- [ ] Recursive problem-solving
+- [x] Recursive problem-solving
 - [ ] Basic Hashing
 - [ ] Sorting algorithms
 - [ ] Searching techniques
@@ -25,7 +25,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [ ] Matrix traversal patterns
 - [ ] String manipulation algorithms
 
-**Problems Solved:** 20 ✅
+**Problems Solved:** 29 ✅
 ---
 
 ### 🔗 Stage 2: Linked Lists, Stacks, Queues, Trees (~120 Problems)
@@ -140,7 +140,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ---
 
-**Last Updated:** [21-06-2025]
+**Last Updated:** [14-07-2025]
 
 **Challenge Started:** [12-06-2025]
 
