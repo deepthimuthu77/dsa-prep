@@ -15,7 +15,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [x] Basic Math
 - [x] Basic recursion patterns  **<===**
 - [x] Recursive problem-solving
-- [ ] Basic Hashing
+- [x] Basic Hashing
 - [ ] Sorting algorithms
 - [ ] Searching techniques
 - [ ] Array manipulation problems
@@ -25,7 +25,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [ ] Matrix traversal patterns
 - [ ] String manipulation algorithms
 
-**Problems Solved:** 29 ✅
+**Problems Solved:** 32 ✅
 ---
 
 ### 🔗 Stage 2: Linked Lists, Stacks, Queues, Trees (~120 Problems)
@@ -140,7 +140,7 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 
 ---
 
-**Last Updated:** [14-07-2025]
+**Last Updated:** [18-07-2025]
 
 **Challenge Started:** [12-06-2025]
 
