@@ -2,7 +2,7 @@
 
 Welcome to my Data Structures and Algorithms preparation journey! This repository tracks my progress through Striver's comprehensive A2Z DSA Sheet over 4 Stages.
 
-**Total Progress: 20 Problems Solved** 🎯
+**Total Progress: 32 Problems Solved** 🎯
 
 ---
 
