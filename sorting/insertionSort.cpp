@@ -1,6 +1,11 @@
 #include<bits\stdc++.h>
 using namespace std;
 
+/*
+ALGORITHM:
+1. 
+*/
+
 void insertion_sort(int arr[], int n){
     cout << "Sorting the array.." << endl;
     for(int i = 0; i < n; i++){

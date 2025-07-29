@@ -1,6 +1,11 @@
 #include<bits\stdc++.h>
 using namespace std;
 
+/*
+ALGORITHM:
+1. 
+*/
+
 void selection_sort(int arr[], int n){
     for(int i = 0; i < n - 1; i++) {
         int minIndex = i;
