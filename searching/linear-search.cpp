@@ -1,8 +1,7 @@
 #include<bits\stdc++.h>
 using namespace std;
 
-/*
-ALGORITHM:
+/* ALGORITHM:
 Step 1 − Start from the 0th index of the input array, compare the key value with the value present in the 0th index.
 
 Step 2 − If the value matches with the key, return the position at which the value was found.
