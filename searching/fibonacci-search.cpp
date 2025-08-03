@@ -17,6 +17,38 @@ Step 3 − Until Fm-2 is greater than 0, we perform the following steps −
 Step 4 − As there are two 1s in the Fibonacci series, there arises a case where your two preceding numbers will become 1. So if Fm-1 becomes 1, there is only one element left in the array to be searched. We compare the key element with that element and return the 1st index. Otherwise, the algorithm returns an unsuccessful search.
 */
 
+int min(int a, int b){
+    return (a > b) ? b : a;
+}
+int fibonacci_search(int arr[], int n, int key){
+    int offset = -1;
+    int Fm2 = 0;
+    int Fm1 = 1;
+    int Fm = Fm2 + Fm1;
+    while (Fm < n) {
+        Fm2 = Fm1;
+        Fm1 = Fm;
+        Fm = Fm2 + Fm1;
+    }
+    while (Fm > 1) {
+        int i = min(offset + Fm2, n - 1);
+        if (arr[i] < key) {
+            Fm = Fm1;
+            Fm1 = Fm2;
+            Fm2 = Fm - Fm1;
+            offset = i;
+        } else if (arr[i] > key) {
+            Fm = Fm2;
+            Fm1 = Fm1 - Fm2;
+            Fm2 = Fm - Fm1;
+        } else
+        return i;
+    }
+    if (Fm1 && arr[offset + 1] == key)
+        return offset + 1;
+    return -1;
+}
+
 int main(){
     int n, search;
     cout << "Enter no. of elements: ";
@@ -28,6 +60,11 @@ int main(){
     cout << "Enter element to search: ";
     cin >> search;
 
+    int pos = fibonacci_search(arr, n, search);
+    if(pos >= 0)
+        cout << "\nThe element is found at index " << pos;
+    else
+        cout << "\nUnsuccessful Search";
 
     return 0;
 }

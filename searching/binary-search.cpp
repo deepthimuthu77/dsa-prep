@@ -25,6 +25,7 @@ void binary_search(int arr[], int low, int high, int key){
             binary_search(arr, mid+1, high, key);
         else if (low > high)
     cout << "Unsuccessful Search" << endl;
+    }
 }
 
 int main(){
