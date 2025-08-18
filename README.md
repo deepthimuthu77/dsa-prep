@@ -16,8 +16,8 @@ Welcome to my Data Structures and Algorithms preparation journey! This repositor
 - [x] Basic recursion patterns 
 - [x] Recursive problem-solving
 - [x] Basic Hashing
-- [ ] Sorting algorithms
-- [ ] Searching techniques
+- [x] Sorting algorithms
+- [x] Searching techniques
 - [ ] Array manipulation problems
 - [ ] Backtracking fundamentals
 - [ ] Sliding window technique
