@@ -12,6 +12,11 @@ using namespace std;
 6 − Repeat until list is sorted
 -----------------------------------------------------------------------------
 */
+void swap(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
 void insertion_sort(int arr[], int n){
     cout << "Sorting the array.." << endl;

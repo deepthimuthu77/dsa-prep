@@ -13,6 +13,11 @@ using namespace std;
 5 − The final output achieved is the sorted array. 
 -----------------------------------------------------------------------------
 */
+void swap(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
 void bubble_sort(int arr[], int n){
     for(int i = 0; i < n; i++){
