@@ -481,7 +481,6 @@ void pattern27(){
     }
 }
 
-
 int main(){
     string run = "y";
     int choice;
