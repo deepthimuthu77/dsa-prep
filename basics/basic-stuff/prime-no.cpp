@@ -3,26 +3,22 @@ using namespace std;
 
 int main() {
     int num;
-    cout << "Enter a number: ";
-    if (!(cin >> num)) return 0;
+    cout << "Enter positive number: ";
+    cin >> num ;
 
-    if (num <= 1) {
-        cout << "NOT PRIME";
-        return 0;
+    if (num  <= 0){
+        cout << "Invalid entry!";
     }
-
-    bool isPrime = true;
-    for (int i = 2; i * i <= num; ++i) {
-        if (num % i == 0) {
-            isPrime = false;
-            break;
+    else if (num >=2){
+        cout << "PRIME"; 
+    }
+    else{
+        for (int i =2; i*i <= num ; i++){
+            if (num % i == 0){
+                cout << "NOT PRIME"; break;
+            }
         }
-    }
-
-    if (isPrime)
         cout << "PRIME";
-    else
-        cout << "NOT PRIME";
-
+    }
     return 0;
 }
