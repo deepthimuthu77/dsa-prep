@@ -1,4 +1,15 @@
-#include<bits\stdc++.h>
+#include<iostream>
+#include<vector>
+#include<list>
+#include<deque>
+#include<stack>
+#include<queue>
+#include<set>
+#include<unordered_set>
+#include<map>
+#include<unordered_map>
+#include<algorithm>
+
 using namespace std;
 
 void explainPair() {
