@@ -41,6 +41,28 @@ int nthAP_term(int n){
     return 3*n + 7;
 }
 
+int numOfSetBits(int n){
+    int count = 0;
+    while(n){
+        if(n&1 == 1) count++;
+        n >>= 1;
+    }
+    return count;
+}
+
+int nthFibNum(int n){
+    int n1, n2 = 1;
+    int n3;
+    if (n <= 0) return 0;
+    if (n <= 2) return 1;
+    for (int i=3; i<=n; i++){
+        n3 = n1+n2;
+        n1 = n2;
+        n2 = n3;
+    }
+    return n3;
+}
+
 int main(){
     int a,b;
     cin >> a >> b;
@@ -50,12 +72,19 @@ int main(){
     isEven(a)? cout << a << " is even" << endl : cout << a << " is odd" << endl;
     isEven(b)? cout << b << " is even" << endl : cout << b << " is odd" << endl; 
 
-    cout << "nCr: " << nCr(a,b);
+    cout << "nCr: " << nCr(a,b) << endl;
 
     isPrime(a);
     isPrime(b);
 
-    cout << "nth AP term for " << a<< ": " << nthAP_term(a);
-    cout << "nth AP term for " << b<< ": " << nthAP_term(b);
+    cout << "nth AP term for " << a<< ": " << nthAP_term(a) << endl;
+    cout << "nth AP term for " << b<< ": " << nthAP_term(b) << endl;
+
+    cout << "No. of set bits in " << a << ": " << numOfSetBits(a) << endl;
+    cout << "No. of set bits in " << b << ": " << numOfSetBits(b) << endl;
+
+    cout << a << "th Fibonacci term: " << ": " << nthFibNum(a) << endl;
+    cout << b << "th Fibonacci term: " << ": " << nthFibNum(b) << endl;
+    
     return 0;
 }
