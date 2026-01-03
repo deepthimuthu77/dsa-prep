@@ -104,6 +104,7 @@ int main() {
 
     cout << "Reversed array:" << endl;
     printArray(nums, numsSize);
+    
 
     return 0;
 }
