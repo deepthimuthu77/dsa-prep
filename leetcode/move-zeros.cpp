@@ -10,4 +10,4 @@ public:
         }
         for(int i=index; i<nums.size();i++) nums[i] = 0;
     }
-};
+}; 
