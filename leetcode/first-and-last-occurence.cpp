@@ -5,7 +5,7 @@ class Solution {
 public:
 
     int firstOcc(vector<int>& arr, int low, int high, int key){
-        int first = -1;
+        int first = NULL;
         while(low<=high){
             int mid = low+(high-low)/2;
             if(arr[mid] == key){
@@ -18,7 +18,7 @@ public:
         return first;
     }
     int lastOcc(vector<int>& arr, int low, int high, int key){
-        int last = -1;
+        int last = NULL;
         while(low<=high){
             int mid = low+(high-low)/2;
             if(arr[mid] == key){
